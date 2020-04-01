@@ -17,8 +17,9 @@ COUNTRY_CODE = os.getenv("COUNTRY_CODE", default="US")
 
 def human_friendly_temp(my_temperature_f):
     """Rounds a decimal fahrenheit temperature to the nearest whole degree, adds degree symbol"""
-    degree_sign = u"\N{DEGREE SIGN}"
-    return f"{round(my_temperature_f)} {degree_sign}F"
+    #degree_sign = u"\N{DEGREE SIGN}"
+    degree_sign = "DEGREES"
+    return f"{round(my_temperature_f)} {degree_sign}"
 
 def get_hourly_forecasts(zip_code=MY_ZIP, country_code=COUNTRY_CODE):
     # see: https://openweathermap.org/current
