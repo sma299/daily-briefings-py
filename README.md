@@ -67,5 +67,7 @@ python -m app.daily_briefing # note the module-syntax invocation
 
 ## Web App Usage
 ``` py
-FLASK_APP=web_app flask run
+export FLASK_APP=web_app 
+
+flask run
 ```
